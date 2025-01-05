@@ -1,0 +1,118 @@
+/* General styles for NewPost */
+.NewPost {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Editor toolbar styles */
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.toolbar button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.8rem;
+   
+}
+.toolbar:hover{
+    opacity: 1;
+    transition-duration: 0.3s; 
+    
+}
+
+.toolbar button.is-active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.toolbar button:disabled {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+button:hover{
+    background-color: rgba(159, 138, 55, 0.521);
+    color:white;
+}
+
+
+
+/* Editor content styles */
+.editor-content {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+    min-height: 300px;
+    max-height: 500px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+
+.ProseMirror{
+    min-height: 300px;
+    max-height:500px;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(246, 242, 242);
+    border-radius: 4px;
+   
+    
+
+}
+
+/* Save button */
+.save-button {
+    background-color: rgb(255, 174, 0);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save-button:hover {
+    background-color:  rgb(233, 164, 17);
+}
+
+/* Post content display */
+.post-content {
+    min-height: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+    
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    font-size: 16px;
+    line-height: 1.6;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+ img{
+    width: 300px;
+    height: 150px;
+}
