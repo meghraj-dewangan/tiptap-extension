@@ -4,6 +4,7 @@ import ShowPost from "./ShowPost";
 import "./NewPost.css"
 
 
+
 function NewPost() {
     const [htmlContent, setHtmlContent] = useState('');
 
@@ -15,19 +16,25 @@ function NewPost() {
     }
 
     return (
-        <div className="NewPost">
 
-            <TipTap onEditorContentSave={handleEditorContentSave} />
-            <hr />
-            <div className="post-content">
-                <ShowPost content={htmlContent} />
+        <div>
+         <h1 className="logo">Tip Tap Extension</h1>
+            <div className="NewPost">
+
+                <TipTap onEditorContentSave={handleEditorContentSave} />
+                <hr />
+                <div className="post-content">
+                    <ShowPost content={htmlContent} />
+                </div>
+
+
+
+
+
             </div>
 
-
-
-
-
         </div>
+
     )
 }
 export default NewPost;
